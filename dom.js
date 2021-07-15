@@ -2,6 +2,9 @@ const navBar = document.getElementById('navBar');
 const sidebar = document.querySelector('.sidebar');
 const radio = document.getElementById("menu-btn");
 
+const textBox = document.getElementById("sm-desc");
+const projects = document.querySelectorAll(".box1");
+
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', ()=>{
@@ -12,7 +15,10 @@ window.addEventListener('scroll', ()=>{
         radio.checked = false;
     } else {
         navBar.style.top = "0";
+        radio.checked = false;
     }
 
     lastScrollTop = scrollTop;
 });
+
+

@@ -17,19 +17,20 @@
         </ul>
 
         <div class="nav-sect">
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><div class="div-icon"><span class="navicon"></span></div></label>
+            
             <ul class="sidebar">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </ul>
         </div>
         <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a class="cont" href="#contact">Contact</a>
         </ul>
     </nav>
     <header>
@@ -43,7 +44,7 @@
     
     <section>
         <div class="about-skills">
-            <div class="about">
+            <div class="about" id="about">
                 <h2>More about me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae sint magni autem veritatis assumenda, quibusdam distinctio at numquam quod excepturi. Iusto in error accusantium cupiditate sit quo blanditiis reiciendis, harum possimus quam consectetur.</p>
                 <br>
@@ -51,7 +52,7 @@
                 <br>
                 <button class="cv"><a target="_blank" href="Miguel-Le-Roux.pdf" class="cvv">View Resume</a> </button>
             </div>
-            <div class="skills">
+            <div class="skills" id="skills">
                 <h2>Skills</h2>
                 <p>My fullstack developing skills</p>
                 <br>
@@ -72,7 +73,7 @@
             </div> 
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
         <br>
         <h2>My Projects</h2>
         <br>
@@ -81,24 +82,35 @@
                 <h3 class="proj-title">Greetings</h3>
                 
                 <div class="box1">
-                    <img src="images/greetings.png">
+                    <a href="https://miguellouisleroux.github.io/greetings/" target="_blank"><img src="images/greetings.png"></a>
                     <div class="box2">
                         <h3>Greetings</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, deserunt!</p>
-                        <button class="project-button"><a target="_blank" href="#" class="proj-link">View</a></button>
+                        <a target="_blank" href="https://miguellouisleroux.github.io/greetings/" class="project-button">View</a>
                     </div>
                 </div>
             </div>
-
+            <div class="proj-container">
+                <h3 class="proj-title">Matching Days</h3>
+                
+                <div class="box1">
+                    <a href="https://miguellouisleroux.github.io/matching_days/" target="_blank"><img src="images/matching-days.png"></a>
+                    <div class="box2">
+                        <h3>Matching Days</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, deserunt!</p>
+                        <a target="_blank" href="https://miguellouisleroux.github.io/matching_days/" class="project-button">View</a>
+                    </div>
+                </div>
+            </div>
             <div class="proj-container">
                 <h3 class="proj-title">Registration Numbers</h3>
                 
                 <div class="box1">
-                    <img src="images/registration.png">
+                    <a href="https://miguellouisleroux.github.io/registration_numbers/" target="_blank"><img src="images/registration.png"></a>
                     <div class="box2">
                         <h3>Reg No</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, deserunt!</p>
-                        <button class="project-button"><a target="_blank" href="#" class="proj-link">View</a></button>
+                        <a target="_blank" href="https://miguellouisleroux.github.io/registration_numbers/" class="project-button">View</a>
                     </div>
                 </div>
             </div>
@@ -106,11 +118,11 @@
                 <h3 class="proj-title">Shoe Catalogue</h3>
                 
                 <div class="box1">
-                    <img src="images/shoe_catalogue_1.png">
+                    <a href="https://miguellouisleroux.github.io/shoe_catalogue/" target="_blank"><img src="images/shoe_catalogue_1.png"></a>
                     <div class="box2">
                         <h3>Shoe Catalogue</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, deserunt!</p>
-                        <button class="project-button"><a target="_blank" href="#" class="proj-link">View</a></button>
+                        <a target="_blank" href="https://miguellouisleroux.github.io/shoe_catalogue/" class="project-button">View</a>
                     </div>
                 </div>
             </div>
@@ -118,11 +130,11 @@
                 <h3 class="proj-title">Shoe Catalogue Admin Support</h3>
                 
                 <div class="box1">
-                    <img src="images/shoe_catalogue_2.png">
+                    <a href="https://miguellouisleroux.github.io/shoe_catalogue/user-support/index.html" target="_blank"><img src="images/shoe_catalogue_2.png"></a>
                     <div class="box2">
                         <h3>Admin Support</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, deserunt!</p>
-                        <button class="project-button"><a target="_blank" href="#" class="proj-link">View</a></button>
+                        <a target="_blank" href="https://miguellouisleroux.github.io/shoe_catalogue/user-support/index.html" class="project-button">View</a>
                     </div>
                 </div>
             </div>
@@ -130,21 +142,37 @@
                 <h3 class="proj-title">Venue Capacity Tracker</h3>
                 
                 <div class="box1">
-                    <img src="images/venue_capacity_mesurer.png">
+                    <a href="https://miguellouisleroux.github.io/Venue_Capacity_tracker/" target="_blank"><img src="images/venue_capacity_mesurer.png"></a>
                     <div class="box2">
                         <h3>Venue Capacity</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, deserunt!</p>
-                        <button class="project-button"><a target="_blank" href="#" class="proj-link">View</a></button>
+                        <a target="_blank" href="https://miguellouisleroux.github.io/Venue_Capacity_tracker/" class="project-button">View</a>
                     </div>
                 </div>
             </div>   
         </div>
+        <div class="sm-desc" id="sm-desc">
+            
+        </div>
         <br>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
+        <footer>
+            
+            
+                
+            </div> 
+        </footer>
         <br>
         <br>
         <h2 class="contact-title">Get In Touch</h2>
+        <br>
+        <div class="socials">
+            <div class="contact-det">
+                <p>Phone No: 072 603 3942</p>
+                <p>Email: miguellerouxleroux@gmail.com</p>
+            </div>
+        </div>
         <br>
         <form id="contact-form">
             <label>Name</label>
@@ -165,22 +193,20 @@
             <br>
             <input id="submit-btn" type="submit" value="Send">
         </form>
+        <br>
+        <div class="links">
+            <hr>
+            <br>
+            <h3>Links</h3>
+            <br>
+            <div class="links">
+                <a target="_blank" href="https://github.com/MiguelLouisLeRoux" ><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/miguel-le-roux-1555231a1/" ><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </section>
     <br>
     <br>
-    <br>
-    <footer>
-        <div class="socials">
-            <hr>
-            <h2>Social Links</h2>
-            <div class="links">
-                <a><i class="fab fa-github"></i></a>
-                <a><i class="fab fa-linkedin"></i></a>
-            </div>
-            <br>
-            <br>
-        </div> 
-    </footer>
     <script src="dom.js"></script>
 </body>
 </html>
