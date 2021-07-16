@@ -27,7 +27,7 @@ html {
 }
 
     
-h1 {font-size: 1.2rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+h1 {font-size: 1.4rem; font-family: 'Roboto', sans-serif; line-height: 2;}
 h2 {font-size: 1rem; font-family: 'Roboto', sans-serif; line-height: 2;}
 h3 {font-size: 0.9rem; font-family: 'Roboto', sans-serif; line-height: 2;}
 
@@ -103,6 +103,8 @@ nav .menu-icon .navicon:after {
     transition: all .2s ease-out;
     width: 100%;
     cursor: pointer;
+    height: 2px;
+
 }
 
 nav .menu-icon .navicon:before {
@@ -190,8 +192,8 @@ header {
 
 .image {
     content: '';
-    width: 8rem;
-    height: 8rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
     background: darkgray;
 }
@@ -419,10 +421,6 @@ i {
     cursor: pointer;
 }
 
-footer .socials h2 {
-    margin: 1rem;
-}
-
 .links {
     display: block;
     width: 80%;
@@ -433,7 +431,83 @@ footer .socials h2 {
 /* ****Footer*** */
 
 
+@media (min-width: 590px) {
+
+    h1 {font-size: 1.6rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    h2 {font-size: 1rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    h3 {font-size: 0.9rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+
+    .intro h3 {font-size: 0.9rem;}
+
+
+    header {
+        flex-flow: row;
+        flex-wrap: nowrap;
+    }
+
+    .image {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (min-width: 700px) {
+
+    h1 {font-size: 2rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    h2 {font-size: 1.2rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    h3 {font-size: 0.9rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    
+    .intro h3 {font-size: 1.1rem;}
+
+    p, li, a, label, i {font-size: 0.9rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+
+    .links i {
+        font-size: 2rem;
+    }
+
+    .links h3 {
+        font-size: 1rem;
+    }
+
+    .image {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .project-sect {
+        padding: 3%;
+        flex-flow: row;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+    .proj-container {
+        flex-flow: column-reverse;
+    }
+
+    .proj-container .proj-title {
+        padding: 1rem;
+    }
+}
+
+
 @media (min-width: 48em) {
+
+    h1 {font-size: 2.1rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    h2 {font-size: 1.2rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    h3 {font-size: 0.9rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+
+    .intro h3 {font-size: 1.2rem;}
+
+    p, li, a, label, i {font-size: 0.9rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+
+    .links i {
+        font-size: 2rem;
+    }
+
+    .links h3 {
+        font-size: 1.1rem;
+    }
 
     /* ****Navigation**** */
     nav .menu-icon, .sidebar {
@@ -442,7 +516,7 @@ footer .socials h2 {
 
     nav ul li, nav ul a {
         display: inline-block;
-        padding: 0.8rem 0;
+        padding: 0.6rem 0;
         width: 6rem;
         color: dodgerblue;
         text-align: center;
@@ -465,44 +539,22 @@ footer .socials h2 {
     }
     /* ****Navigation**** */
 
-
-    /* ****Header**** */
-
-    /* ****Header**** */
-
-
-    /* ****About-Skills**** */
-    .about-skills {
-        height: 100%;
-        flex-flow: row;
-        justify-content: space-evenly;
-        
-    }
-
-    .about {
-        
-        width: 40%;
-    }
-
-    .skills {
-        width: 40%;
-    }
-    /* ****About-Skills**** */
-
-
     /* ****PROJECTS**** */
     .project-sect img {
+        width: 20rem;
+        height: 15rem;
         transition: 700ms ease-in-out;
     }
 
-    .box1:hover img {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 0.3rem;
+    .box1 {
+        width: 20rem;
+        height: 15rem;
     }
 
-    .box2 {
-        display: block;
+    .box1:hover img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.3rem;
     }
 
     .box2 {
@@ -510,29 +562,32 @@ footer .socials h2 {
         padding: 0.5em 1em;
         color: #333447;
         float: right;
+        display: block;
     }
     
     .box2 p {
         line-height: 1.5;
     }
-
-    .box2 a {
-        position: unset;
-    }
     
     .box2 a {
+        width: calc(100% - 15px);
+        bottom: 7.5px;
+        left: 7.5px;
         border: solid 0.1rem dodgerblue;
-        background-color: dodgerblue;
-        padding: 0.1em 0.8em;
-        border-radius: 0.2rem;
+        background-color: lightseagreen;
+        border-radius: 0.5rem;
         cursor: pointer;
         color: whitesmoke;
         transition: 300ms;
+        text-align: center;
+        align-content: center;
+        font-size: 1rem;
+        height: 15%;
     }
     
     .box2 a:hover {
         border: solid 0.1rem seagreen;
-        background-color: seagreen;
+        background-color: rgb(76, 186, 194);
     }
     
     .project-button {
@@ -557,25 +612,42 @@ footer .socials h2 {
     /* ****Contact**** */
 }
 
-@media (min-width: 470px) {
-    header {
+
+@media (min-width: 1100px) {
+
+    h1 {font-size: 3rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    h2 {font-size: 1.5rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+    h3 {font-size: 1rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+
+    .intro h3 {font-size: 1.5rem;}
+
+    p, li, a, label, i {font-size: 0.9rem; font-family: 'Roboto', sans-serif; line-height: 2;}
+
+    .links i {
+        font-size: 2rem;
+    }
+
+    .links h3 {
+        font-size: 1.3rem;
+    }
+
+    .image {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .about-skills {
+        height: 100%;
         flex-flow: row;
-        flex-wrap: nowrap;
-    }
-}
-
-@media (min-width: 700px) {
-    .project-sect {
-        flex-flow: row;
-        flex-wrap: wrap;
-        gap: 2rem;
+        justify-content: space-evenly;   
     }
 
-    .proj-container {
-        flex-flow: column-reverse;
+    .about {
+        
+        width: 40%;
     }
 
-    .proj-container .proj-title {
-        padding: 1rem;
+    .skills {
+        width: 40%;
     }
 }
