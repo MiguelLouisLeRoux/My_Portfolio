@@ -6,7 +6,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 1rem;
     overflow-x: hidden;
 }
 
@@ -43,7 +42,8 @@ ul {
 }
 
 section {
-    margin: 8%;
+    /* margin: 8%; */
+    padding: 8%;
 }
 
 /* ****Navigation**** */
@@ -350,7 +350,7 @@ header {
 /* ****Contact**** */
 .contact {
     background-color: whitesmoke;
-    margin: 0;
+    padding: 1%;
     width: 100vw;
 }
 
@@ -378,6 +378,7 @@ header {
     border: solid 0.1rem teal;
     font-size: 0.8rem;
     outline-color: darkorange;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #submit-btn {
@@ -472,11 +473,14 @@ footer .socials h2 {
 
     /* ****About-Skills**** */
     .about-skills {
+        height: 100%;
         flex-flow: row;
         justify-content: space-evenly;
+        
     }
 
     .about {
+        
         width: 40%;
     }
 

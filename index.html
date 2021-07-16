@@ -40,11 +40,10 @@
             <h3>a fullstack agile web developer.</h3>
         </div>
         <div class="image"></div>
-    </header>
-    
-    <section>
+    </header>  
+    <section id="about">
         <div class="about-skills">
-            <div class="about" id="about">
+            <div class="about" >
                 <h2>More about me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae sint magni autem veritatis assumenda, quibusdam distinctio at numquam quod excepturi. Iusto in error accusantium cupiditate sit quo blanditiis reiciendis, harum possimus quam consectetur.</p>
                 <br>
@@ -187,15 +186,8 @@
                 </div>
             </div> 
         </div>
-        <br>
     </section>
     <section class="contact" id="contact">
-        <footer>
-            
-            
-                
-            </div> 
-        </footer>
         <br>
         <br>
         <h2 class="contact-title">Get In Touch</h2>
@@ -203,28 +195,30 @@
         <div class="socials">
             <div class="contact-det">
                 <p>Phone No: 072 603 3942</p>
-                <p>Email: miguellerouxleroux@gmail.com</p>
+                <!-- <p>Email: miguellerouxleroux@gmail.com</p> -->
             </div>
         </div>
         <br>
-        <form id="contact-form">
+        <form id="contact-form" action="https://formsubmit.co/miguellerouxleroux@gmail.com" method="POST">
             <label>Name</label>
-            <input class="input-field" type="text" name="name">
-            <br>
-            <br>
-            <label>Subject</label>
-            <input class="input-field" type="text" name="subject">
+            <input class="input-field" type="text" name="name" placeholder="Full Name" required>
             <br>
             <br>
             <label>Email</label>
-            <input class="input-field" type="text" name="email">
+            <input class="input-field" type="email" name="email" placeholder="Please enter your email address" required>
+            <br>
+            <br>
+            <label>Subject</label>
+            <input class="input-field" type="text" name="subject" required>
             <br>
             <br>
             <label>Message</label>
-            <textarea class="input-field" name="message"></textarea>
+            <textarea class="input-field" name="message" required></textarea>
             <br>
             <br>
             <input id="submit-btn" type="submit" value="Send">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_next" value="#">
         </form>
         <br>
         <div class="links">
@@ -237,7 +231,6 @@
                 <a target="_blank" href="https://www.linkedin.com/in/miguel-le-roux-1555231a1/" ><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-        <br>
         <br>
     </section>
     <script src="dom.js"></script>
